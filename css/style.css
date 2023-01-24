@@ -1,0 +1,24 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display:flex;
+    flex-direction: row;
+}
+section[name=top]{
+    display: flex;
+    flex-direction: column;
+}
+section[name=top]>.logo{
+    background-color: aqua;
+    flex:1 100px;
+}
+section[name=top]>.nav{
+    background-color: red;
+    width: 2fr;
+    flex:3 700px;
+}
+section[name=top]>.contact{
+    background-color: yellow;
+    flex:1 100px;
+}
