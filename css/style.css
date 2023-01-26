@@ -22,6 +22,9 @@ section[name=top]>.logo{
     /* background-color: aqua; */
     flex:1 100px;
 }
+img{
+    height: auto;
+}
 section[name=top]>.nav{
     /* background-color: red; */
     flex:3 700px;
@@ -46,7 +49,16 @@ section[name=top]>.contact li{
 }
 
 section[name=hero]{
-    height:100vh;
+    height:50vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://via.placeholder.com/728x250.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section[name=hero]>.headline{
+    align-self: center;
 }
 
 section[name=pricing]{
