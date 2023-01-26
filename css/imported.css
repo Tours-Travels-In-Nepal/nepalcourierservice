@@ -1,0 +1,96 @@
+.nested-dropdowns {
+    /* Border */
+    /* border: 1px solid #d1d5db; */
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nested-dropdowns li {
+    cursor: pointer;
+
+    /* Spacing */
+    padding: 0.25rem;
+
+    /* Used to position the sub nested-dropdowns */
+    position: relative;
+}
+
+.nested-dropdowns a{
+    text-decoration: none;
+}
+
+/* The sub nested-dropdowns */
+.nested-dropdowns ul {
+    /* Border */
+    border: 1px solid #d1d5db;
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* The second level sub nested-dropdowns */
+.nested-dropdowns ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.nested-dropdowns li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Show the direct sub nested-dropdowns when hovering the list item */
+.nested-dropdowns li:hover > ul {
+    display: block;
+    /* background-color: brown; */
+}
+
+.nested-dropdowns li > ul > li a:hover{
+    color:rgb(13, 47, 28);
+}
+
+.nested-dropdowns a{
+    display: block;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }

@@ -1,24 +1,91 @@
+@import "imported.css";
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
+    margin: 8px;
+}
+.container{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1%;
 }
 section[name=top]{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    margin-top: -8px;
 }
 section[name=top]>.logo{
-    background-color: aqua;
+    /* background-color: aqua; */
     flex:1 100px;
 }
 section[name=top]>.nav{
-    background-color: red;
-    width: 2fr;
+    /* background-color: red; */
     flex:3 700px;
+    /* align-self: center; */
+    /* height: 100%; */
+    display:flex;
+    justify-content: flex-end;
+}
+.navbg{
+    background-color: rgba(255, 0, 162, 1);
+}
+section[name=top]>.nav>ul{
+    align-self: center;
 }
 section[name=top]>.contact{
-    background-color: yellow;
+    /* background-color: yellow; */
     flex:1 100px;
 }
+section[name=top]>.contact li{
+    list-style: none;
+    display:inline;
+}
+
+section[name=hero]{
+    height:100vh;
+}
+
+section[name=pricing]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section[name=services]{
+    
+}
+section[name=services]>.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+section[name=testimonials]{
+
+}
+
+section[name=certificates]{
+
+}
+
+section[name=footer]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div>h1, section>h1{
+    text-align: center;
+}
+div>h2{
+    text-align: center;
+}
+div>p{
+    text-align: center;
+}
+
